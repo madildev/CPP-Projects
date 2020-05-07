@@ -170,7 +170,7 @@ void saveContacts(Contact arr[], int size)
 {
 	bool valid = true;
 	ofstream file;
-	file.open("Contacts.csv");
+	file.open("Contacts.csv",ios::app);
 	if(file.fail())
 	{
 		cout<<"	File NOT Open"<<endl;
@@ -216,7 +216,7 @@ void printContacts(Contact arr[],int size)
 	cout<<"Name:"<<'\t'<<"Contact:"<<'\t'<<"Address:"<<'\t'<<"Email:"<<"\n";
 	for(int i=0;i<size;i++)
 	{
-		cout<<arr[i].name<<"\t"<<arr[i].number<<"\t"<<arr[i].address<<"\t"<<arr[i].email;
+		cout<<arr[i].name<<"\n"<<arr[i].number<<"\n"<<arr[i].address<<"\n"<<arr[i].email;
 	}
 }
 // The Menu Function
@@ -284,6 +284,7 @@ int main()
 	Contact editCont;
 	Contact oldContact;
 	Contact search;
+	loadContacts(arr,size);
 	Menu();    
 	while(true)
 	{
