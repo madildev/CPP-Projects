@@ -216,6 +216,13 @@ void printContacts(Contact arr[],int size)
 	cout<<"Name:"<<'\t'<<"Contact:"<<'\t'<<"Address:"<<'\t'<<"Email:"<<"\n";
 	for(int i=0;i<size;i++)
 	{
+<<<<<<< HEAD
+<<<<<<< HEAD
+		
+=======
+>>>>>>> dbd537f07f6885dd5e4eb9e499a6c32efd09aec5
+=======
+>>>>>>> dbd537f07f6885dd5e4eb9e499a6c32efd09aec5
 		cout<<arr[i].name<<"\n"<<arr[i].number<<"\n"<<arr[i].address<<"\n"<<arr[i].email;
 	}
 }
